@@ -6,7 +6,3 @@ add something new
 add something new
 
 add something
-
-add something
-
-add something
