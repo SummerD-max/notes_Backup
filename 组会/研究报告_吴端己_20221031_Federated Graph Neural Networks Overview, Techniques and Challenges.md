@@ -99,7 +99,9 @@ Figure 2 是有中心服务器的 FedGNN 图示
 
 #### weighted summation 
 
-![img](https://img2022.cnblogs.com/blog/2145900/202210/2145900-20221027170951271-890868198.png)
+$$
+w_{i}^{t+1} = \sum_{j \in N(i)} a_{i j} \cdot\left[\mathbf{w}_{j}^{(t)}\right]
+$$
 
 where
 
@@ -115,7 +117,11 @@ where
 
 在此设置中，每个数据所有者将图拉普拉斯正则化纳入目标函数，**以使来自邻近客户端的模型参数相似，从而解决非IID数据问题**[Ortega et al., 2018]
 
-![img](https://img2022.cnblogs.com/blog/2145900/202210/2145900-20221027171832275-544877267.png)
+公式：
+
+$$
+R(\mathbf{W}, \mathbf{L})=\operatorname{tr}\left(\mathbf{W}^{T} \mathbf{L} \mathbf{W}\right)=\frac{1}{2} \sum_{i j} a_{i j} ||\mathbf{w}_i-\mathbf{w}_j||^2
+$$
 
 where  
 (1) $\mathbf{W} \in \mathbb{R}^{n \times p}$  denotes the model weights of neighboring clients.  
