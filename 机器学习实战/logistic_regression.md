@@ -7,3 +7,15 @@
 (4).更新$\theta$向量，其更新表达式如下。更新完毕后继续转入步骤1.
 
 **something new**
+
+
+$$
+AA \times BB = CC_a^2
+$$
+
+$$
+BB \times AA = CC_b^2
+$$
+
+
+
