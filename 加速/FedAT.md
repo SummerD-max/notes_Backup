@@ -14,13 +14,11 @@ $w_k$ 客户端k的模型 $w$全局模型。
 
 ![img](https://img2023.cnblogs.com/blog/2145900/202302/2145900-20230228095431423-1401202117.png)
 
-FedAT uses a new cross-tier, weighted aggregation heuristic, which dynamically adjusts the relative weights assigned to each tier based on the number of times a tier has updated the global mode. The goal of the weighted aggregation heuristic is to help the global training converge faster.
+FedAT uses a new cross-tier, weighted aggregation heuristic, which dynamically adjusts the relative weights assigned to each tier based on the number of times a tier has updated the global mode. The goal of the weighted aggregation heuristic is to **help the global training converge faster**.
 
-- The goal of the weighted aggregation heuristic is to help the global training converge faster
+- **a relatively slower tier with a tier number 𝑚 would get assigned a relatively larger weight value**
 
-- a relatively slower tier with a tier number 𝑚 would get assigned a relatively larger weight value
-
-- avoid potential bias towards a subset of faster tiers
+- **avoid potential bias towards a subset of faster tiers**
 
 ## Compression
 
