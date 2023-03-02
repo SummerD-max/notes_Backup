@@ -1,8 +1,8 @@
-# FedAT
+# FedAT （有点像 Hierarchical Fedrated Learning）
 
 ![img](https://img2023.cnblogs.com/blog/2145900/202302/2145900-20230228100858810-1937790399.png)
 
-## Constraint Term
+## Constraint Term（保证模型不偏移）
 
 ![img](https://img2023.cnblogs.com/blog/2145900/202302/2145900-20230228094422453-458358020.png)
 
@@ -10,7 +10,7 @@
 
 $w_k$ 客户端k的模型 $w$全局模型。
 
-## Cross-Tier Weighted Aggregation
+## Cross-Tier Weighted Aggregation（设置权重）
 
 ![img](https://img2023.cnblogs.com/blog/2145900/202302/2145900-20230228095431423-1401202117.png)
 
@@ -27,3 +27,5 @@ As studied in [39], many compression methods [3, 40] suffer from slow convergenc
 使用了一个有损的压缩(lossy compression) - Encoded Polyline Algorithm
 
 - It can be configured to maintain a configurable precision by rounding the value to a specified decimal place. With the appropriate precision, the model could achieve the largest communication saving and minor performance loss.
+
+## 不采取强制更新策略
